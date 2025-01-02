@@ -1,3 +1,3 @@
 # Macumpiler 
 
-[resource](https://norasandler.com/2017/11/29/Write-a-Compiler.html)
+[resource](https://craftinginterpreters.com/chunks-of-bytecode.html#getting-started)
