@@ -1,5 +1,5 @@
-#ifndef clox_chunk_h
-#define clox_chunk_h
+#ifndef coom_chunk_h
+#define coom_chunk_h
 
 #include <stdlib.h>
 #include "common.h"
