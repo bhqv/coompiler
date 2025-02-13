@@ -19,13 +19,20 @@ struct Obj {
     ObjType type;
 };
 
-struct ObjString {
+typedef struct {
     Obj obj;
     int length;
     char* chars;
-};
+} ObjString;
 
-ObjString* copyString(const char* chars, int lenght);
+
+// struct ObjString {
+//     Obj obj;
+//     int length;
+//     char* chars;
+// };
+
+ObjString* copyString(const char* chars, int length);
 void printObject(Value value);
 
 static inline bool isObjType(Value value, ObjType type) {

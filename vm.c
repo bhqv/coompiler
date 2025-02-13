@@ -95,7 +95,9 @@ static InterpretResult run() {
             case OP_GREATER: BINARY_OP(BOOL_VAL, >); break;
             case OP_LESS: BINARY_OP(BOOL_VAL, <); break;
             case OP_ADD: {
-                    if //  
+                    if (IS_STRING(peek(0)) && IS_STRING(peek(1))) {
+                        concatenate();
+                        // 
             case OP_ADD: BINARY_OP(NUMBER_VAL, +); break;
             case OP_SUBSTRACT: BINARY_OP(NUMBER_VAL, -); break;
             case OP_MULTIPLY: BINARY_OP(NUMBER_VAL, *); break;
