@@ -26,11 +26,14 @@ static void runtimeError(const char* format, ...) {
     resetStack();
 }
 
+extern VM vm;
+
 void initVM() {
     resetStack();
 }
 
 void freeVM() {
+    freeObjects();
 }
 
 void push(Value value) {
