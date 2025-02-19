@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "memory.h"
+#include "object.h"
 #include "vm.h"
 
 void* reallocate(void* pointer, size_t oldSize, size_t newSize) {
@@ -34,3 +35,14 @@ void freeObjects() {
         object = next;
     }
 }
+
+
+
+// void freeObjects() {
+//     Obj* object = vm.objects;
+//     while (object != NULL) {
+//         Obj* next = object->next;
+//         freeObject(object);
+//         object = next;
+//     }
+// }
